@@ -54,7 +54,8 @@ function Navbar() {
               {/*About link*/}
               <li className='nav-item'>
                 <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                  01. About me
+                <p style={{color: 'red'}}>01.</p>
+                About me
                 </Link>
               </li>
 
@@ -63,9 +64,9 @@ function Navbar() {
                 <Link
                   to='/projects'
                   className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  02. Projects
+                  onClick={closeMobileMenu}>
+                    <p style={{color: 'red'}}>02.</p>
+                  Projects
                 </Link>
               </li>
 
@@ -76,29 +77,10 @@ function Navbar() {
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  03. Contact
+                  <p style={{color: 'red'}}>03.</p>
+                  Contact
                 </Link>
               </li>
-
-              {/*Resume button*/}
-              <div className='nav-btn'>
-                {button ? (
-                  <Link to='/' className='btn-link'>
-                    <Button buttonStyle='btn--outline'>RESUME</Button>
-                  </Link>
-                ) : (
-                  <Link to='/' className='btn-link'>
-                    <Button
-                      buttonStyle='btn--outline'
-                      buttonSize='btn--mobile'
-                      onClick={closeMobileMenu}
-                    >
-                      RESUME
-                    </Button>
-                  </Link>
-                )}
-              </div>
-
 
             </ul>
             </div>
